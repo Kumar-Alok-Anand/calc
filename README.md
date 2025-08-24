@@ -17,4 +17,4 @@ To build a functional calculator using HTML, CSS, and JavaScript.
 A fully working calculator. Try it below!
 
 ## 🔗 Live Demo
-[Click here to view](https://yourusername.github.io/OIBSIP_WebDevelopment_Task1)
+[Click here to view](https://kumar-alok-anand.github.io/OIBSIP_WebDevelopment_Task1/)
