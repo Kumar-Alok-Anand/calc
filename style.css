@@ -1,0 +1,95 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Calculator Container */
+.calculator {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  width: 340px;
+  max-width: 90%;
+  padding: 20px;
+}
+
+/* Display */
+.display {
+  background: #222;
+  color: #0f0;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+/* Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Buttons */
+.btn {
+  padding: 20px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 12px;
+  background: #ecf0f1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #bdc3c7;
+}
+
+.operator {
+  background: #f39c12;
+  color: #fff;
+}
+
+.operator:hover {
+  background: #e67e22;
+}
+
+.equal {
+  background: #27ae60;
+  color: #fff;
+  grid-row: span 2;
+}
+
+.equal:hover {
+  background: #2ecc71;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+/* Responsive */
+@media screen and (max-width: 400px) {
+  .display {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  .btn {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+}
